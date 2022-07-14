@@ -2,7 +2,7 @@ import { join, dirname } from 'node:path';
 
 import { fileURLToPath, parse } from 'node:url';
 
-import { routes } from './routes/heroRoute.js';
+import { heroRoutes } from './routes/heroRoute.js';
 import { DEFAULT_HEADER } from './utils/headerUtil.js';
 
 import { generateInstance } from './factories/heroFactory.js';
@@ -14,12 +14,10 @@ const heroService = generateInstance({
   filePath,
 });
 
-const heroRoutes = routes({
-  heroService,
-});
-
 const allRoutes = {
-  ...heroRoutes,
+  ...heroRoutes({
+    heroService,
+  }),
 
   // 404 routes
   default: (request, response) => {
