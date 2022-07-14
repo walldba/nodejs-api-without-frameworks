@@ -2,7 +2,7 @@ import { once } from 'node:events';
 import Hero from '../entities/hero.js';
 import { DEFAULT_HEADER } from '../utils/headerUtil.js';
 
-const routes = ({ heroService }) => ({
+const heroRoutes = ({ heroService }) => ({
   '/heroes:get': async (request, response) => {
     const heroes = await heroService.find();
 
@@ -33,4 +33,4 @@ const routes = ({ heroService }) => ({
   },
 });
 
-export { routes };
+export { heroRoutes };
