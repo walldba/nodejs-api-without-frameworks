@@ -8,5 +8,9 @@
   "engines": {
     "node": ">=18.1.0"
   },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "PORT=9009 node --test"
+  },
   "license": "MIT"
 }
