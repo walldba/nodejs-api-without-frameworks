@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-api-without-frameworks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:walldba/nodejs-api-without-frameworks.git",
+  "author": "walldba <wallacedba@gmail.com>",
+  "engines": {
+    "node": ">=18.1.0"
+  },
+  "license": "MIT"
+}
