@@ -7,7 +7,15 @@ export default class HeroService {
     return this.heroRepository.find();
   }
 
+  findById(heroId) {
+    return this.heroRepository.findById(heroId);
+  }
+
   create(data) {
     return this.heroRepository.create(data);
+  }
+
+  update(heroId, item) {
+    return this.heroRepository.update(heroId, item);
   }
 }
