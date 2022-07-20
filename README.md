@@ -8,7 +8,7 @@
 
 ## About
 
-This project is based on Erick Wendel's [Video](https://www.youtube.com/watch?v=xR4D2bp8_S0).
+This project is based on [Erick Wendel's](https://github.com/ErickWendel) [Video](https://www.youtube.com/watch?v=xR4D2bp8_S0).
 
 The idea of this project is to build a NodeJS API using only native libs and without any frameworks. I expect to improve my acknowledge about NodeJS native libs and undestand more how the famous HTTP frameworks works internally.
 
