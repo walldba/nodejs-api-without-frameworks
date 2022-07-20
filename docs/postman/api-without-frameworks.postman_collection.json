@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "1fb69125-131b-4378-bf35-cbe471269dde",
+		"name": "Node API Without Frameworks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3292537"
+	},
+	"item": [
+		{
+			"name": "Get Heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Hero",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Wall\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/heroes/:heroId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes",
+						":heroId"
+					],
+					"variable": [
+						{
+							"key": "heroId",
+							"value": "52240860-4c58-443e-bfdc-c4e4a7e531b9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Hero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Flash\",\n    \"age\": 99,\n    \"power\": \"speed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"heroes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
