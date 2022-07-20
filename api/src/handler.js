@@ -28,7 +28,12 @@ const allRoutes = {
 };
 
 function handler(request, response) {
-  const { url, method } = request;
+  let { url, method } = request;
+  const urlSplit = url.split('/');
+
+  if (urlSplit.length >= 3) {
+    url = `/${urlSplit[1]}`;
+  }
 
   const { pathname } = parse(url, true);
 
